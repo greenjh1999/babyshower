@@ -6,12 +6,14 @@ exports.handler = async function (event, context) {
   console.log('Received RSVP data:', { name, message });
 
   const transporter = nodemailer.createTransport({
-    service: 'outlook',
-    auth: {
-      user: process.env.EMAIL_USER,
-      pass: process.env.EMAIL_PASSWORD,
-    },
-  });
+  service: 'outlook',
+  auth: {
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASSWORD,
+  },
+  secure: true,
+});
+;
 
   const mailOptions = {
     from: 'no_reply_john_green@outlook.com',
