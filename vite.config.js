@@ -6,6 +6,7 @@ import ViteReactPlugin from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [ViteReactPlugin()],
   build: {
+    outDir: 'build',
     cssCodeSplit: true,
     sourcemap: true,
     // Add your purge configuration here
