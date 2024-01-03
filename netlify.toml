@@ -1,0 +1,7 @@
+[build]
+  functions = "functions"  # Folder where your serverless functions are located
+  publish = "build"        # Folder with your React app build
+
+[build.environment]
+  EMAIL_USER = "no_reply_john_green@outlook.com"
+  EMAIL_PASSWORD = "Lynn91979!"
