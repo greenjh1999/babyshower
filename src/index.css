@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  transition-property: opacity, transform;
+  background-color: pink;
+}
+
+@keyframes custom-pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+.custom-animate-pulse {
+  animation: custom-pulse 10s infinite; /* Adjust the duration to slow down or speed up */
+}
+
