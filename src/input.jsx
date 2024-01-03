@@ -28,10 +28,12 @@ function Input() {
 
       if (response.ok) {
         console.log('RSVP sent successfully');
+        alert('Your RSVP has been sent Thank You')
       } else {
         console.error('Failed to send RSVP');
       }
     } catch (error) {
+      alert('Failed to RSVP, try again later!')
       console.error('Error while sending RSVP', error);
     }
   };
