@@ -8,8 +8,8 @@ exports.handler = async function (event, context) {
   const transporter = nodemailer.createTransport({
   service: 'outlook',
   auth: {
-    user: 'no_reply_john_green@outlook.com',
-    pass: 'Lynn91979!',
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASSWORD,
   },
 });
 
