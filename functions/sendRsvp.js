@@ -11,10 +11,6 @@ exports.handler = async function (event, context) {
     user: process.env.EMAIL_USER,
     pass: process.env.EMAIL_PASSWORD,
   },
-  secure: 'starttls',
-  tls: {
-    rejectUnauthorized: false,
-  },
 });
 
 
