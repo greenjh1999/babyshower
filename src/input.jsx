@@ -18,7 +18,7 @@ function Input() {
         const formData = new URLSearchParams();
         formData.append('name', name);
         formData.append('message', message)
-        const response = await fetch('https://main--tranquil-strudel-d10111.netlify.app/.netlify/functions/sendRsvp'', {
+        const response = await fetch('https://main--tranquil-strudel-d10111.netlify.app/.netlify/functions/sendRsvp', {
       method: 'POST',
       headers: {
     'Content-Type': 'application/json',
