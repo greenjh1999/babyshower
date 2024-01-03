@@ -18,7 +18,7 @@ exports.handler = async function (event, context) {
     from: 'no_reply_john_green@outlook.com',
     to: 'johngreenmauhs12345@gmail.com',
     subject: `New Babyshower RSVP from ${name}`,
-    text: `${message}`,
+    text: `${name}, ${message}`,
   };
 
   try {
