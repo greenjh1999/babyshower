@@ -11,9 +11,12 @@ exports.handler = async function (event, context) {
     user: process.env.EMAIL_USER,
     pass: process.env.EMAIL_PASSWORD,
   },
-  secure: true,
+  secure: 'starttls',
+  tls: {
+    rejectUnauthorized: false,
+  },
 });
-;
+
 
   const mailOptions = {
     from: 'no_reply_john_green@outlook.com',
